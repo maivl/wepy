@@ -215,6 +215,12 @@ export default {
         rst.template.type = rst.template.type || 'wxml';
         rst.script.type = rst.script.type || 'babel';
 
+        // 调用自定义方法, fix
+        const { preCompile } = config;
+        if (preCompile){
+            rst.script.code = preCompile(rst.script.code);
+        }
+
         // get config
         (() => {
             let match = rst.script.code.match(/[\s\r\n]config\s*=[\s\r\n]*/);

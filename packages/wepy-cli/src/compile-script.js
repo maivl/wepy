@@ -227,6 +227,12 @@ export default {
             }
         }
 
+        // 调用自定义方法, fix
+        const { preCompile } = config;
+        if (preCompile){
+            code = preCompile(code);
+        }
+
         let compiler = loader.loadCompiler(lang);
 
         if (!compiler) {
