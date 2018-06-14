@@ -1,10 +1,10 @@
 {
-  "name": "wepy-cli",
+  "name": "weimobpy-cli",
   "version": "1.7.3-alpha1",
   "description": "",
   "main": "bin/wepy.js",
   "bin": {
-    "wepy": "bin/wepy.js"
+    "weimobpy": "bin/wepy.js"
   },
   "scripts": {
     "build": "babel --presets es2015,stage-1 src/ --out-dir lib/ --source-maps",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:wepyjs/wepy.git"
+    "url": "git@github.com:maivl/wepy.git"
   },
   "author": "Gcaufy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wepyjs/wepy/issues"
+    "url": "https://github.com/maivl/wepy/issues"
   },
-  "homepage": "https://github.com/wepyjs/wepy#readme",
+  "homepage": "https://github.com/maivl/wepy#readme",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.18.0",
